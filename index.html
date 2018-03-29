@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:normal" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:bold" rel="stylesheet" />
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <body> 
     <div class="block_main">
       <div class="block_top">
@@ -102,6 +102,48 @@
       </div>
       <div class="block_button">
         <a class="all_movies" href="https://www.ivi.ru/movies">Все фильмы</a>
+      </div>
+      <div class="block_registration">
+        <form action="URL" method="GET" class="block_registration">
+          <img src="pictures/line-left.png" alt="line" class="line_left" />
+          <span class="title_registration">НАПИШИ МНЕ</span>
+          <img src="pictures/line-right.png" alt="line" class="line_right" />
+          <label>
+            <span class="title_field">Ваше имя <span class="important_field">*</span></span>
+            <input name="username" type="text" class="form_field" required autofocus />
+          </label>
+          <label>
+            <span class="title_field">Ваш email <span class="important_field">*</span></span>
+            <input name="emailuser" type="email" class="form_field" required />
+          </label> 
+          <label>
+            <span class="title_select">Откуда вы?</span>
+            <select name="countrys" class="select_field">
+              <option value="russia">Россия</option>
+              <option value="england">Англия</option>
+              <option value="ukraine">Украина</option>
+            </select>
+          </label> 
+          <label>
+            <span class="item_name">Ваш пол</span>
+            <input type="radio" name="gender" value="male" class="radio_male" />
+            <span class="title_radio">Мужской</span>
+          </label>
+          <lable>
+            <input type="radio" name="gender" value="female" class="radio_female" />
+            <span class="title_radio">Женский</span> 
+          </lable>  
+          <label>
+            <span class="title_textarea">Ваше сообщение <span class="important_field">*</span></span>
+            <textarea name="message" rows="10" required class="textarea_field">
+            </textarea>
+          </label>
+          <label>
+            <button type="submit" value="Отправить" class="submit_button">
+              <span class="title_submit">Отправить</span>
+            </button>
+          </label>
+        </form>
       </div>
       <div class="block_footer">
         <span class="footer_signature">
